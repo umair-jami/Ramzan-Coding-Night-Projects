@@ -1,0 +1,18 @@
+chainlit: 2.0.0
+
+# Interface settings
+ui:
+  name: "Simple Chatbot"
+  description: "A simple chatbot that can answer questions about the ChainLit project."
+
+default_expand_message: true
+
+auth:
+  required: true
+  providers:
+    - github
+
+oauth_providers:
+  github:
+    client_id: ${GITHUB_CLIENT_ID}
+    client_secret: ${GITHUB_CLIENT_SECRET}
